@@ -37,6 +37,8 @@ li {
 
 header,
 footer {
+  display: flex;
+  flex-direction: row;
   background-color: white;
   padding: 20px 50px;
 }
@@ -46,7 +48,7 @@ footer {
   color: white;
   border-radius: 50px;
   padding: 20px 30px;
-
+  width:fit-content;
 }
 
 a:hover {
@@ -108,14 +110,6 @@ nav a {
   margin-left: 30px;
 }
 
-footer,
-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .accueil-introduction {
   display: flex;
   flex-direction: row;
@@ -123,7 +117,7 @@ nav {
   align-items: flex-start;
   margin: auto;
 }
-
+ 
 .introduction {
   display: flex;
   flex-direction: column;
@@ -136,4 +130,23 @@ nav {
 
 .introduction a {
   margin-top: 30px;
+}
+
+nav{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer div{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+footer a {
+  margin-left: 20px;
 }
